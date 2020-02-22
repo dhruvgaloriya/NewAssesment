@@ -33,17 +33,15 @@ class home extends Component {
 									>
 										Edit
 									</button>
-									{this.state.showPopup ? (
-										<Popup
-											text="Close Me"
-											closePopup={this.togglePopup.bind(this)}
-										/>
-									) : null}
 								</div>
 							</div>
 						</div>
 					))}
 				</div>
+
+				{this.state.showPopup ? (
+					<Popup text="Close Me" closePopup={this.togglePopup.bind(this)} />
+				) : null}
 			</React.Fragment>
 		);
 	}
