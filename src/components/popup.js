@@ -18,18 +18,18 @@ export default class Popup extends Component {
 						close me
 					</button>
 
-					{/* <div className="card">
+					<div className="card">
 						<div className="container">
 							<img
-								src={item["image_url"]}
+								src={this.props.url}
 								className="image-card"
-								alt={item["name"]}
+								alt={this.props.name}
 							/>
 							<div className="card-body">
-								<h5 className="card-title">{item["name"]}</h5>
+								<h5 className="card-title">{this.props.name}</h5>
 							</div>
 						</div>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		);

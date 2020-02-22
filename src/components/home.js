@@ -4,11 +4,15 @@ import "./home.css";
 import Popup from "./popup";
 class home extends Component {
 	state = {
-		showPopup: false
+		showPopup: false,
+		url: "",
+		name: ""
 	};
-	togglePopup = () => {
+	togglePopup = (url, name) => {
 		this.setState({
-			showPopup: !this.state.showPopup
+			showPopup: !this.state.showPopup,
+			url,
+			name
 		});
 	};
 	render() {
@@ -29,7 +33,11 @@ class home extends Component {
 									</div>
 									<button
 										className="middle btn btn-primary"
-										onClick={this.togglePopup.bind(this)}
+										onClick={this.togglePopup.bind(
+											this,
+											item["image_url"],
+											item["name"]
+										)}
 									>
 										Edit
 									</button>
@@ -40,7 +48,11 @@ class home extends Component {
 				</div>
 
 				{this.state.showPopup ? (
-					<Popup text="Close Me" closePopup={this.togglePopup.bind(this)} />
+					<Popup
+						text="Close Me"
+						closePopup={this.togglePopup.bind(this)}
+						url={this.state.url}
+					/>
 				) : null}
 			</React.Fragment>
 		);
