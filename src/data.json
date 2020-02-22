@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Sports",
+		"image_url": "http://lorempixel.com/400/200/sports/"
+	},
+	{
+		"name": "Abstract",
+		"image_url": "http://lorempixel.com/800/200/abstract/"
+	},
+	{
+		"name": "Animals",
+		"image_url": "http://lorempixel.com/200/900/animals/"
+	},
+	{
+		"name": "Business",
+		"image_url": "http://lorempixel.com/400/200/business/"
+	},
+	{
+		"name": "Cats",
+		"image_url": "http://lorempixel.com/8000/200/cats/"
+	},
+	{
+		"name": "Nightlife",
+		"image_url": "http://lorempixel.com/400/600/nightlife/"
+	},
+	{
+		"name": "Fashion",
+		"image_url": "http://lorempixel.com/400/400/fashion/"
+	},
+	{
+		"name": "Food",
+		"image_url": "http://lorempixel.com/400/500/food/"
+	},
+	{
+		"name": "Nature",
+		"image_url": "http://lorempixel.com/400/1000/nature/"
+	},
+	{
+		"name": "People",
+		"image_url": "http: //lorempixel.com/400/1000/people/"
+	}
+]
